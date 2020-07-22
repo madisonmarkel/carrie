@@ -56,60 +56,112 @@ h1, h2, h3, h4, h5 {
   align-items: center;
 }
 /* COLUMNS */
-.cols {
-  clear: both;
-  content: "";
-  display: flex;
+
+@media screen and (min-width: 767px) {
+  div[class^="cols"] {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  div[class^="cols"] > div {
+    box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .cols_center {
+    align-items: center;
+  }
+
+  .cols_stretch > div {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cols_stretch > div > div {
+    width: 100%;
+  }
+
+  .cols_justify_between {
+    justify-content: space-between;
+  }
+
+  .cols_justify_around {
+    justify-content: space-around;
+  }
+
+  .cols_justify_center {
+    justify-content: center;
+  }
+
+  .col_one_third {
+    width: 33.33%;
+  }
+  .col_40 {
+    float: left;
+    width: 40%;
+  }
+  .col_60 {
+    float: left;
+    width: 60%;
+  }
 }
-.cols:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-.cols > div {
-  display: flex;
-  flex: 1;
-  float: none !important;
-  width: 100%;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
+// for boxes
 .cols > div > div, .cols > div > a {
   width: 100%;
 }
-@media screen and (max-width: 767px) {
-  .cols {
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    -moz-box-orient: vertical;
-    -webkit-box-orient: vertical;
-    -ms-box-orient: vertical;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-  }
-  .cols > div {
-    display: flex;
-    float: none !important;
-    width: 100%;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  .cols > div > div {
-    width: 100%;
-  }
-}
-.col_one_third {
-  float: left;
-  width: 33.33%;
-  /* display: flex; */
-}
+
+// .cols {
+//   clear: both;
+//   content: "";
+//   display: flex;
+// }
+// .cols:after {
+//   visibility: hidden;
+//   display: block;
+//   font-size: 0;
+//   content: " ";
+//   clear: both;
+//   height: 0;
+// }
+// .cols > div {
+//   display: flex;
+//   flex: 1;
+//   float: none !important;
+//   width: 100%;
+//   padding-left: 0 !important;
+//   padding-right: 0 !important;
+// }
+// .cols > div > div, .cols > div > a {
+//   width: 100%;
+// }
+// @media screen and (max-width: 767px) {
+//   .cols {
+//     display: flex;
+//     display: -webkit-box;
+//     display: -moz-box;
+//     display: -ms-flexbox;
+//     display: -webkit-flex;
+//     -moz-box-orient: vertical;
+//     -webkit-box-orient: vertical;
+//     -ms-box-orient: vertical;
+//     -webkit-flex-direction: column;
+//     flex-direction: column;
+//     width: 100%;
+//   }
+//   .cols > div {
+//     display: flex;
+//     float: none !important;
+//     width: 100%;
+//     padding-left: 0 !important;
+//     padding-right: 0 !important;
+//   }
+//   .cols > div > div {
+//     width: 100%;
+//   }
+// }
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FONT */
 h1, h2, h3, h4 {
   font-family: 'Cutive Mono', monospace;
@@ -212,7 +264,6 @@ a {
   padding: 1em;
   background: #fff;
   box-shadow: 8px 8px 16px rgba(199, 196, 201, 0.25), -8px -2px 16px rgba(199, 196, 201, 0.15);
-  margin: .5em;
 }
 .project_box > img {
   padding: 0;
@@ -294,6 +345,9 @@ add box shadow to photo column _ potentialy remove footer
 }
 .vertical_align_middle {
   vertical-align: middle;
+}
+.margin_b_100 {
+  margin-bottom: 1em;
 }
 /* COLORS */
 .color_curry {

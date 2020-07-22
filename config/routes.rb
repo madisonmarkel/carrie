@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   root 'home#index'
 
   # get 'product/index', :as => "product"
-  get 'product' => "product#index", :as => :product
+  get 'product' => 'product#index', :as => :product
+  get 'product/digital-government-wallet' => 'product#digital_wallet', :as => :product_digital_wallet
 end
