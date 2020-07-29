@@ -1,5 +1,6 @@
 /* COLUMNS */
 
+// this is on desktop
 @media screen and (min-width: 767px) {
   div[class^="cols"] {
     display: -ms-flexbox;
@@ -53,6 +54,12 @@
     float: left;
     width: 60%;
   }
+}
+
+// this is on mobile
+.cols {
+  display: flex;
+  flex-wrap: wrap;
 }
 // for boxes
 .cols > div > div, .cols > div > a {

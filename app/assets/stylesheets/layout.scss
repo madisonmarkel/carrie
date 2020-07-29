@@ -92,6 +92,12 @@ body {
 
 // !!!! MEDIA QUERIES
 @media screen and (max-width:1180px){
+  .ms_order_1 {
+    order: 1;
+  }
+  .ms_order_2 {
+    order: 2;
+  }
   .media_xs_hide {
     display: none;
   }
@@ -100,6 +106,12 @@ body {
   }
 }
 @media screen and (max-width:1168px) {
+  .ms_order_1 {
+    order: 1;
+  }
+  .ms_order_2 {
+    order: 2;
+  }
   .media_xs_hide {
     display: none;
   }
@@ -111,6 +123,12 @@ body {
   }
 }
 @media screen and (max-width:767px) {
+  .ms_order_1 {
+    order: 1;
+  }
+  .ms_order_2 {
+    order: 2;
+  }
   .media_xs_hide {
     display: none;
   }
