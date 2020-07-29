@@ -1,0 +1,8 @@
+// Place all the styles related to the Graphic controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.graphic_landing_background {
+  background: image-url('graphic-landing.png') no-repeat scroll center center / contain !important;
+  border: .5em solid #fff;
+}

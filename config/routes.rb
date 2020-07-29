@@ -6,4 +6,13 @@ Rails.application.routes.draw do
   # get 'product/index', :as => "product"
   get 'product' => 'product#index', :as => :product
   get 'product/digital-government-wallet' => 'product#digital_wallet', :as => :product_digital_wallet
+
+  # GRAPHIC
+  get 'graphic' => 'graphic#index', :as => :graphic
+
+  # ILLUSTRATION
+  get 'illustration' => 'illustration#index', :as => :illustration
+
+  # ABOUT
+  get 'about' => 'about#index', :as => :about
 end
