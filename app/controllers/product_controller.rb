@@ -1,6 +1,6 @@
 class ProductController < ApplicationController
   def product
-    @page_title = 'All products designed or managed by Carrie Markel'
+    @page_title = 'Carrie Markel | Products'
     @meta_description = 'All products designed or managed by Carrie Markel.'
     render 'product/index'
   end

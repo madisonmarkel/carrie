@@ -7,6 +7,11 @@ bigger gutter bewtween text and photos
 margin-right gutter for text so width is maintained (max-width: 800px)
 add box shadow to photo column _ potentialy remove footer
 */
+// add meta descriptions
+// figure out favicon
+// circles in about
+// eye under page status
+// weird JS bug - when you are on mobile and use the nav to go to another page, you can't open the nav again
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HOME PAGE */
 #bio_name {
@@ -14,55 +19,3 @@ add box shadow to photo column _ potentialy remove footer
   letter-spacing: .48em;
   line-height: 120%;
 }
-
-
-
-// .cols {
-//   clear: both;
-//   content: "";
-//   display: flex;
-// }
-// .cols:after {
-//   visibility: hidden;
-//   display: block;
-//   font-size: 0;
-//   content: " ";
-//   clear: both;
-//   height: 0;
-// }
-// .cols > div {
-//   display: flex;
-//   flex: 1;
-//   float: none !important;
-//   width: 100%;
-//   padding-left: 0 !important;
-//   padding-right: 0 !important;
-// }
-// .cols > div > div, .cols > div > a {
-//   width: 100%;
-// }
-// @media screen and (max-width: 768px) {
-//   .cols {
-//     display: flex;
-//     display: -webkit-box;
-//     display: -moz-box;
-//     display: -ms-flexbox;
-//     display: -webkit-flex;
-//     -moz-box-orient: vertical;
-//     -webkit-box-orient: vertical;
-//     -ms-box-orient: vertical;
-//     -webkit-flex-direction: column;
-//     flex-direction: column;
-//     width: 100%;
-//   }
-//   .cols > div {
-//     display: flex;
-//     float: none !important;
-//     width: 100%;
-//     padding-left: 0 !important;
-//     padding-right: 0 !important;
-//   }
-//   .cols > div > div {
-//     width: 100%;
-//   }
-// }
