@@ -1,0 +1,60 @@
+/* COLUMNS */
+
+@media screen and (min-width: 767px) {
+  div[class^="cols"] {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    // margin-left: 1em;
+    // margin-right: 1em;
+  }
+  div[class^="cols"] > div {
+    box-sizing: border-box;
+    // padding-left: 1em;
+    // padding-right: 1em;
+  }
+
+  .cols_center {
+    align-items: center;
+  }
+
+  .cols_stretch > div {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cols_stretch > div > div {
+    width: 100%;
+  }
+
+  .cols_justify_between {
+    justify-content: space-between;
+  }
+
+  .cols_justify_around {
+    justify-content: space-around;
+  }
+
+  .cols_justify_center {
+    justify-content: center;
+  }
+
+  .col_33 {
+    width: 33.33%;
+  }
+  .col_40 {
+    float: left;
+    width: 40%;
+  }
+  .col_50 {
+    float: left;
+    width: 50%;
+  }
+  .col_60 {
+    float: left;
+    width: 60%;
+  }
+}
+// for boxes
+.cols > div > div, .cols > div > a {
+  width: 100%;
+}

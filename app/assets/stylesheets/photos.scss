@@ -1,0 +1,46 @@
+/* NEW PHOTOS */
+
+.project_photos {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.project_box {
+  padding: 1em;
+  background: #fff;
+  box-shadow: 8px 8px 16px rgba(199, 196, 201, 0.25), -8px -2px 16px rgba(199, 196, 201, 0.15);
+  margin-left: .5em;
+  margin-right: .5em;
+}
+.project_box > img {
+  padding: 0;
+}
+
+/*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES */
+@media screen and (max-width:1180px){
+  .project_photos {
+    flex-direction: row;
+    max-width: 33%;
+  }
+  .project_box {
+    margin-bottom: 1em;
+  }
+}
+@media screen and (max-width:1168px) {
+  .project_photos {
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .project_box {
+    margin-bottom: 1em;
+  }
+}
+@media screen and (max-width:767px) {
+  .project_photos {
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .project_box {
+    margin-bottom: 1em;
+  }
+}

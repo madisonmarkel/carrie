@@ -1,0 +1,123 @@
+// LAYOUT
+
+body {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5;
+  cursor: default;
+  background: #fff;
+  margin: 0;
+}
+#dot_background {
+  background: image-url('dot-grid.png');
+}
+.fixed_width {
+  max-width: 85rem;
+  padding: 0em 1.5em;
+}
+
+/* ROWS */
+.row_small {
+  padding: .5em 0 !important;
+}
+.row {
+  padding: 1.5em 0 !important;
+}
+.row_large {
+  padding: 3em 0 !important;
+}
+.row_xl {
+  padding: 6em 0 !important;
+}
+
+// WIDTH
+.width_100 {
+  width: 100%;
+}
+
+/* FLEX */
+.flex_display {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.flex_wrap {
+  flex-wrap: wrap;
+}
+.flex_justify_between {
+  justify-content: space-between;
+}
+.flex_justify_center {
+  justify-content: center;
+}
+.flex_align_center {
+  align-items: center;
+}
+
+// DESCRIPTION ON PROJECT PAGES
+#description {
+  padding: 0 4em;
+  max-width: 55rem;
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MISCELLANEOUS */
+.hide {
+  display: none
+}
+.float_right {
+  float: right;
+}
+.remove_margin {
+  margin: 0;
+}
+.remove_margin_top {
+  margin-top: 0;
+}
+.remove_line_height {
+  line-height: 0;
+}
+.vertical_align_middle {
+  vertical-align: middle;
+}
+.margin_b_100 {
+  margin-bottom: 1em;
+}
+
+// !!!! MEDIA QUERIES
+@media screen and (max-width:1180px){
+  .media_xs_hide {
+    display: none;
+  }
+  .media_xs_show {
+    display: block;
+  }
+}
+@media screen and (max-width:1168px) {
+  .media_xs_hide {
+    display: none;
+  }
+  .media_xs_show {
+    display: block;
+  }
+  #description {
+    order: 1;
+  }
+}
+@media screen and (max-width:767px) {
+  .media_xs_hide {
+    display: none;
+  }
+  .media_xs_show {
+    display: block;
+  }
+  #description {
+    order: 1;
+  }
+}

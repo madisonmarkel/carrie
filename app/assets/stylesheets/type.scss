@@ -1,0 +1,49 @@
+h1, h2, h3, h4, h5 {
+  line-height: 1;
+}
+h1, h2, h3, h4 {
+  font-family: 'Cutive Mono', monospace;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1em;
+}
+a {
+  color: #FF3F3F;
+  text-decoration: none;
+}
+.no_color {
+  color: #333;
+}
+.font_small {
+  font-size: .7em;
+}
+.font_medium {
+  font-size: .9em
+}
+.font_large {
+  font-size: 1.8em;
+}
+.font_center {
+  text-align: center;
+}
+.font_right {
+  text-align: right;
+}
+.text_uppercase {
+  text-transform: uppercase;
+}
+.text_center {
+  text-align: center;
+}

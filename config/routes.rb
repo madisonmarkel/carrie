@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   # GRAPHIC
   get 'graphic' => 'graphic#index', :as => :graphic
+  get 'graphic/friends-university' => 'graphic#friends_university', :as => :friends_university
 
   # ILLUSTRATION
   get 'illustration' => 'illustration#index', :as => :illustration

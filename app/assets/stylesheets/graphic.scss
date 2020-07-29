@@ -3,6 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .graphic_landing_background {
-  background: image-url('graphic-landing.png') no-repeat scroll center center / contain !important;
-  border: .5em solid #fff;
+  background: image-url('graphic-landing.png') no-repeat scroll center center / cover !important;
+  border: 1em solid #fff;
 }

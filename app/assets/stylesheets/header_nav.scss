@@ -1,0 +1,59 @@
+/*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HEADER AND NAVIGATION */
+#header {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, .2);
+  z-index: 10;
+  /* margin-bottom: 1em; */
+  background: #fff
+}
+.logo_image {
+  max-width: 3em;
+}
+#js_show_nav {
+  text-align: right;
+  width: 100%;
+  z-index: 10;
+  right: 0;
+  background-color: #fff;
+  height: 100vh;
+  padding: 1em 0 0;
+}
+#js_show_nav p {
+  margin-right: 1em;
+}
+.desktop_menu {
+  padding: 1em 0;
+}
+.menu_indicator {
+  position:relative;
+  display: flex;
+  bottom: 0;
+  justify-content:center;
+}
+.menu_indicator_eye {
+  bottom: 0;
+  position: absolute;
+  max-width: 3em;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+
+/*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES */
+@media screen and (max-width:1180px){
+  #header {
+    padding: 1em 0;
+  }
+}
+@media screen and (max-width:1168px) {
+  #header {
+    padding: 1em 0;
+  }
+}
+@media screen and (max-width:767px) {
+  #header {
+    padding: 1em 0;
+  }
+}
