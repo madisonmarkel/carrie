@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   # GRAPHIC
   get 'graphic' => 'graphic#index', :as => :graphic
   get 'graphic/friends-university' => 'graphic#friends_university', :as => :friends_university
+  get 'graphic/quinton-lucas' => 'graphic#quinton_lucas', :as => :quinton_lucas
+  get 'graphic/code-block' => 'graphic#code_block', :as => :code_block
 
   # ILLUSTRATION
   get 'illustration' => 'illustration#index', :as => :illustration
