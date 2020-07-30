@@ -6,16 +6,16 @@
       .media_xs_hide
         .fixed_width.flex_display.flex_justify_between.flex_align_center
           .menu_indicator
-            =link_to 'Product', product_path, :class=>'desktop_menu'
+            =link_to 'Product', product_path, :class=>'js_desktop_menu row_1_0'
             =image_tag('menu_indicator.png', :class=>'menu_indicator_eye js_eyeball hide')
           .menu_indicator
-            =link_to 'Graphic', graphic_path, :class=>'desktop_menu'
+            =link_to 'Graphic', graphic_path, :class=>'js_desktop_menu row_1_0'
             =image_tag('menu_indicator.png', :class=>'menu_indicator_eye js_eyeball hide')
           .menu_indicator
-            =link_to 'Illustration', illustration_path, :class=>'desktop_menu'
+            =link_to 'Illustration', illustration_path, :class=>'js_desktop_menu row_1_0'
             =image_tag('menu_indicator.png', :class=>'menu_indicator_eye js_eyeball hide')
           .menu_indicator
-            =link_to 'About', about_path, :class=>'desktop_menu'
+            =link_to 'About', about_path, :class=>'js_desktop_menu row_1_0'
             =image_tag('menu_indicator.png', :class=>'menu_indicator_eye js_eyeball hide')
       #js_menu_expander.media_xs_show.hide
         <i class="material-icons">menu</i>
@@ -26,10 +26,14 @@
   -# <!-- MOBILE MENU -->
   #js_show_nav.row_small.sticky.hide
     %p.font_large
-      =link_to 'Product', product_path
+      =link_to 'Product', product_path, :class=>"js_mobile_menu no_color"
+      =image_tag('circle.png', :class=>'vertical_align_middle hide')
     %p.font_large
-      =link_to 'Graphic', graphic_path
+      =link_to 'Graphic', graphic_path, :class=>"js_mobile_menu no_color"
+      =image_tag('circle.png', :class=>'vertical_align_middle hide')
     %p.font_large
-      =link_to 'Illustration', illustration_path
+      =link_to 'Illustration', illustration_path, :class=>"js_mobile_menu no_color"
+      =image_tag('circle.png', :class=>'vertical_align_middle hide')
     %p.font_large
-      =link_to 'About', about_path
+      =link_to 'About', about_path, :class=>"js_mobile_menu no_color"
+      =image_tag('circle.png', :class=>'vertical_align_middle hide')
