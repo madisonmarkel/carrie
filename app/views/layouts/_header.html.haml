@@ -5,14 +5,23 @@
         =image_tag('logo.png', :class=>'logo_image', :alt=>"Carrie Markel Logo")
       .media_xs_hide
         .fixed_width.flex_display.flex_justify_between.flex_align_center
-          =link_to 'Product', product_path, :class=>'desktop_menu'
-          =link_to 'Graphic', graphic_path, :class=>'desktop_menu'
-          =link_to 'Illustration', illustration_path, :class=>'desktop_menu'
-          =link_to 'About', about_path, :class=>'desktop_menu'
+          .menu_indicator
+            =link_to 'Product', product_path, :class=>'desktop_menu'
+            =image_tag('menu_indicator.png', :class=>'menu_indicator_eye js_eyeball hide')
+          .menu_indicator
+            =link_to 'Graphic', graphic_path, :class=>'desktop_menu'
+            =image_tag('menu_indicator.png', :class=>'menu_indicator_eye js_eyeball hide')
+          .menu_indicator
+            =link_to 'Illustration', illustration_path, :class=>'desktop_menu'
+            =image_tag('menu_indicator.png', :class=>'menu_indicator_eye js_eyeball hide')
+          .menu_indicator
+            =link_to 'About', about_path, :class=>'desktop_menu'
+            =image_tag('menu_indicator.png', :class=>'menu_indicator_eye js_eyeball hide')
       #js_menu_expander.media_xs_show.hide
         <i class="material-icons">menu</i>
       #js_close_menu.hide
         <i class="material-icons" id="js_close_menu">close</i>
+
 
   -# <!-- MOBILE MENU -->
   #js_show_nav.row_small.sticky.hide

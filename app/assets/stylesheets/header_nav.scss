@@ -22,19 +22,23 @@
 }
 .desktop_menu {
   padding: 1em 0;
-  margin-left: 4em;
 }
+
+// EYEBALL
 .menu_indicator {
   position:relative;
   display: flex;
   bottom: 0;
   justify-content:center;
+  margin-left: 4em;
 }
 .menu_indicator_eye {
   bottom: 0;
   position: absolute;
   max-width: 3em;
 }
+
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
