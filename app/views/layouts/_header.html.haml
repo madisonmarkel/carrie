@@ -3,17 +3,12 @@
     .flex_display.flex_justify_between.flex_align_center.flex_wrap
       =link_to '/', :class=>'remove_line_height' do
         =image_tag('logo.png', :class=>'logo_image')
-      -# <a href="../home/index.html" class="remove_line_height"><img src="../../assets/images/logo.png" class="logo_image"></a>
       .media_xs_hide
-        .fixed_width.flex_display.flex_justify_between.flex_align_center{:style=>"width:32em;"}
+        .fixed_width.flex_display.flex_justify_between.flex_align_center
           =link_to 'Product', product_path, :class=>'desktop_menu'
-          -# <a class="desktop_menu" href="../projects/product/index.html">Product</a>
           =link_to 'Graphic', graphic_path, :class=>'desktop_menu'
-          -# <a class="desktop_menu" href="../projects/graphic/index.html">Graphic</a>
           =link_to 'Illustration', illustration_path, :class=>'desktop_menu'
-          -# <a class="desktop_menu" href="../projects/illustration/index.html">Illustration</a>
           =link_to 'About', about_path, :class=>'desktop_menu'
-          -# <a class="desktop_menu" href="../about.html">About</a>
       #js_menu_expander.media_xs_show.hide
         <i class="material-icons">menu</i>
       #js_close_menu.hide
