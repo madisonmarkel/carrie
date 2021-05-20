@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
 # Changed to PostGres as sql3 doesn't work on heroku
 gem 'pg'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.3'
 # HAML
 gem "haml"
 # Use SCSS for stylesheets
